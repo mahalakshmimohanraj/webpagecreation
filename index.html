@@ -3,29 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Webpage Template</title>
+    <title>Sample Project</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <nav>
-            <h1>My Responsive Site</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
+        <h1>Welcome to Coursera Project</h1>
     </header>
     <main>
         <section>
-            <h2>Welcome!</h2>
-            <p>This is a responsive HTML5 template with an external CSS file.</p>
+            <h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">About This Project</h2>
+            <p>
+                This project demonstrates how to work with text in HTML. You can use paragraphs, headings, lists, and more.
+            </p>
+            <ul>
+                <li>Paragraphs: <code>&lt;p&gt;...&lt;/p&gt;</code></li>
+                <li>Headings: <code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code></li>
+                <li>Lists: <code>&lt;ul&gt;</code>, <code>&lt;ol&gt;</code>, <code>&lt;li&gt;</code></li>
+                <li>Bold: <code>&lt;strong&gt;</code> or <code>&lt;b&gt;</code></li>
+                <li>Italic: <code>&lt;em&gt;</code> or <code>&lt;i&gt;</code></li>
+            </ul>
+            <p>
+                Example of <strong>bold</strong> and <em>italic</em> text.
+            </p>
+            <p>
+                This is the first line.<br>
+                This is the second line after a line break.<br>
+                And this is the third line.
+            </p>
+            <p>
+                This is <strong>very important</strong> text.<br>
+                This is <em>emphasized</em> text.<br>
+                You can <strong><em>combine both</em></strong> for strong emphasis.
+            </p>
+            <p style="font-size: 20px; font-family: Arial, Helvetica, sans-serif; color: #2a7ae2;">
+                This text is larger, uses Arial font, and is blue.
+            </p>
+            <p style="text-align: left;">This text is left aligned.</p>
+            <p style="text-align: center;">This text is center aligned.</p>
+            <p style="text-align: right;">This text is right aligned.</p>
+        </section>
+        <hr>
+        <section>
+            <h1>Main Heading (h1)</h1>
+            <h2>Section Heading (h2)</h2>
+            <h3>Subsection Heading (h3)</h3>
+            <h4>Sub-subsection Heading (h4)</h4>
+            <h5>Minor Heading (h5)</h5>
+            <h6>Smallest Heading (h6)</h6>
+        </section>
+        <section>
+            <h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">Sample List</h2>
+            <ul>
+                <li>Item one</li>
+                <li>Item two</li>
+                <li>Item three</li>
+            </ul>
+        </section>
+        <p>
+            Visit <a href="https://www.coursera.org/" target="_blank">Coursera</a> for more courses.
+        </p>
+        <p>
+            <a href="#sample-list">Jump to Sample List section</a>
+        </p>
+
+        <!-- Example of an anchor target -->
+        <section id="sample-list">
+            <h2>Sample List</h2>
+            <ul>
+                <li>Item one</li>
+                <li>Item two</li>
+                <li>Item three</li>
+            </ul>
+        </section>
+        <section>
+            <h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">Sample Table</h2>
+            <table border="1" cellpadding="8" style="border-collapse: collapse;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Course</th>
+                        <th>Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alice</td>
+                        <td>HTML Basics</td>
+                        <td>95</td>
+                    </tr>
+                    <tr>
+                        <td>Bob</td>
+                        <td>CSS Fundamentals</td>
+                        <td>88</td>
+                    </tr>
+                    <tr>
+                        <td>Charlie</td>
+                        <td>JavaScript Intro</td>
+                        <td>92</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            <h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">Multiple Frames Example</h2>
+            <div style="display: flex; gap: 16px;">
+                <iframe src="https://www.coursera.org/" width="400" height="300" title="Coursera"></iframe>
+                <iframe src="https://www.example.com/" width="400" height="300" title="Example"></iframe>
+            </div>
+        </section>
+        <section>
+            <h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">Sample Form</h2>
+            <form
+                style="
+                    background-image: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=400');
+                    background-size: cover;
+                    background-position: center;
+                    padding: 24px;
+                    border-radius: 12px;
+                "
+            >
+                <label for="name" style="color: #fff; font-weight: bold;">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+                
+                <label for="email" style="color: #fff; font-weight: bold;">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+        <section>
+            <h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">Sample Image</h2>
+            <img src="https://www.coursera.org/about/static/images/logos/coursera-logo-full-rgb.png" alt="Coursera Logo" width="300">
+        </section>
+        <section>
+            <h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">Image Gallery</h2>
+            <div style="display: flex; gap: 16px; flex-wrap: wrap;">
+                <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=200" alt="Nature 1" width="200" style="border-radius: 8px;">
+                <img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?w=200" alt="Nature 2" width="200" style="border-radius: 8px;">
+                <img src="https://images.unsplash.com/photo-1519125323398-675f0ddb6308?w=200" alt="Nature 3" width="200" style="border-radius: 8px;">
+                <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?w=200" alt="Nature 4" width="200" style="border-radius: 8px;">
+            </div>
+        </section>
+        <section>
+            <h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">Image Map Example</h2>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Map_of_the_world_blank_without_borders.svg"
+                 alt="World Map" usemap="#worldmap" width="400">
+
+            <map name="worldmap">
+                <area shape="rect" coords="60,60,120,120" href="https://en.wikipedia.org/wiki/North_America" alt="North America" target="_blank">
+                <area shape="rect" coords="180,120,240,180" href="https://en.wikipedia.org/wiki/South_America" alt="South America" target="_blank">
+                <area shape="rect" coords="250,60,320,120" href="https://en.wikipedia.org/wiki/Europe" alt="Europe" target="_blank">
+                <area shape="rect" coords="320,140,380,200" href="https://en.wikipedia.org/wiki/Africa" alt="Africa" target="_blank">
+                <!-- Add more areas as needed -->
+            </map>
+        </section>
+        <section>
+            <h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">GIF Animation Example</h2>
+            <img src="https://media.giphy.com/media/ICOgUNjpvO0PC/giphy.gif" alt="Animated GIF" width="300">
+        </section>
+        <section>
+            <h2 style="color: green; font-family: Arial, Helvetica, sans-serif;">Attractive GIF Animation</h2>
+            <img src="https://media.giphy.com/media/l0MYt5jPR6QX5pnqM/giphy.gif" alt="Colorful Animation" width="350" style="border-radius: 12px; box-shadow: 0 4px 16px rgba(0,0,0,0.2);">
         </section>
     </main>
     <footer>
-        <p>&copy; 2025 My Responsive Site</p>
+        <p>&copy; 2025 Coursera Project</p>
     </footer>
 </body>
 </html>
